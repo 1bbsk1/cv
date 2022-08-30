@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -16,78 +16,61 @@
   </head>
   <body>
     <div class="page">
-      <header class="header header_white-content header_absolute">
-        <a class="header__logo header__logo_white" href="./">NewsAnalyzer</a>
-        <nav class="header__links-container"
-          ><a
-            class="link header__link header__link_white header__link_selected"
-            href="./"
-            >Главная</a
-          >
-          <a class="link header__link header__link_white" href="./about/"
-            >О проекте</a
-          >
-        </nav>
-      </header>
-      <main class="main">
-        <section class="search">
-          <h1 class="search__title">Что в мире творится?</h1>
-          <p class="search__subtitle"
-            >Введите в поиске любую тему и узнайте, насколько популярной она
-            была в новостях за прошедшую неделю.</p
-          >
-          <form class="search__form">
-            <input
-              class="search__input"
-              placeholder="Введите тему новости"
-              required
-            />
-
-            <button class="button search__button">Искать</button>
-          </form>
-        </section>
-
-        <section class="author">
-          <img
-            class="author__photo"
-            src="<%=require('./images/author-photo.jpg')%>"
-            alt="Федя Лухманов, 
-        автор проекта"
-          />
-          <div class="author__container">
-            <h2 class="author__title">Об авторе</h2>
-            <p class="author__paragraph"
-              >Это блок с описанием автора проекта. Здесь следует указать, как
-              вас зовут, чем вы занимаетесь, какими технологиями разработки
-              владеете.</p
+      <header class="page__header"
+        ><img
+          class="page__photo"
+          src="<%=require('./images/photo.jpg')%>"
+          alt="Fedor Lukhmanov,
+author"
+        /><h1 class="page__title">Fedor Lukhmanov</h1
+        ><h2 class="page__subtitle"
+          >Frontend Developer | React + Redux</h2
+        ></header
+      >
+      <main
+        ><section class="section"
+          ><h3 class="section__title">Portfolio</h3
+          ><ul class="section__list"
+            ><li class="section__list-element"
+              >News Analyzer (responsive layout):<a
+                class="section__link"
+                href="https://1ebobski.github.io/news-analyzer/"
+                >project itself</a
+              >|<a
+                class="section__link"
+                href="https://github.com/1ebobski/news-analyzer"
+                >github repository</a
+              ></li
+            ><li class="section__list-element"
+              >React Burger (React + Redux):<a
+                class="section__link"
+                href="https://1ebobski.github.io/react-burger"
+                >project itself</a
+              >|<a
+                class="section__link"
+                href="https://github.com/1ebobski/react-burger"
+                >github repository</a
+              ></li
             >
-            <p class="author__paragraph"
-              >Также можно рассказать о процессе обучения в Практикуме, чему вы
-              тут научились, и чем можете помочь потенциальным заказчикам.</p
-            ></div
-          >
-        </section>
-      </main>
-      <footer class="footer"
-        ><p class="footer__copyright">&copy; 2020 Supersite</p>
-        <nav class="footer__link-list"
-          ><a class="link footer__link" href="./">Главная</a
-          ><a class="link footer__link" href="./about/">О проекте</a
-          ><a class="link footer__link" href="https://praktikum.yandex.ru/"
-            >Яндекс.Практикум</a
-          ></nav
+          </ul></section
+        ><section class="section"
+          ><h3 class="section__title">Education</h3>
+          <p class="section__paragraph"
+            >Graduated from Yandex.Practicum Junior frontend developer course,
+            undergoing React-developer course</p
+          ></section
         >
-        <div class="footer__icons-container">
-          <a
-            class="footer__social-icon footer__social-icon_github"
-            href="https://vk.com/yandex.praktikum"
-          ></a>
-          <a
-            class="footer__social-icon footer__social-icon_facebook"
-            href="https://www.facebook.com/yandex.praktikum/"
-          ></a>
-        </div>
-      </footer>
+        <section class="section"
+          ><h3 class="section__title">Experience</h3></section
+        >
+        <section class="section"
+          ><h3 class="section__title">About</h3
+          ><p class="section__paragraph"
+            >Graduated from Yandex.Practicum Junior frontend developer course,
+            undergoing React-developer course</p
+          ></section
+        ></main
+      >
     </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>

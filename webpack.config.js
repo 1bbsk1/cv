@@ -13,8 +13,6 @@ new webpack.DefinePlugin({
 module.exports = {
   entry: {
     main: "./src/index.js",
-    about: "./src/about/index.js",
-    analytics: "./src/analytics/index.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -90,16 +88,7 @@ module.exports = {
       template: "./src/index.html",
       filename: "index.html",
     }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: "./src/about/index.html",
-      filename: "./about/index.html",
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: "./src/analytics/index.html",
-      filename: "analytics/index.html",
-    }),
+
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
     }),
