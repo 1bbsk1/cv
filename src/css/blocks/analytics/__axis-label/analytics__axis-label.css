@@ -1,0 +1,14 @@
+@import url("./_month/analytics__axis-label_month.css");
+@import url("./_name/analytics__axis-label_name.css");
+
+.analytics__axis-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  width: 104px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  
+}

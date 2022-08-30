@@ -1,0 +1,7 @@
+@import url("./_selected/slider__bullet_selected.css");
+
+.slider__bullet:after {
+  content: ".";
+  font-size: 8px;
+  color: black;
+}

@@ -1,0 +1,23 @@
+@import url("./__tech-icon/technology__tech-icon.css");
+@import url("./__tech-name/technology__tech-name.css");
+@import url("./__title/technology__title.css");
+
+.technology {
+  padding: 80px calc((100vw - 1232px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5f6f7;
+  justify-content: space-between;
+}
+
+@media (max-width: 1279px) {
+  .technology {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .technology {
+    padding: 16px;
+  }
+}

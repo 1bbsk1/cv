@@ -1,0 +1,19 @@
+@import url("./__paragraph/request-data__paragraph.css");
+@import url("./__title/request-data__title.css");
+
+.request-data {
+  padding: 80px calc((100vw - 1232px) / 2);
+  background-color: #fff;
+}
+
+@media (max-width: 1279px) {
+  .request-data {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 424px) {
+  .request-data {
+    padding: 16px;
+  }
+}

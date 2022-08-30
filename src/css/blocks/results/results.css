@@ -1,0 +1,27 @@
+@import url("./__title/results__title.css");
+@import url("./__link/results__link.css");
+@import url("./__button/results__button.css");
+@import url("./__header/results__header.css");
+@import url("./__icon/results__icon.css");
+@import url("./__text/results__text.css");
+@import url("./__not-found/results__not-found.css");
+
+.results {
+  padding: 80px calc((100vw - 1232px) / 2);
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f6f7;
+  align-items: center;
+}
+
+@media (max-width: 1279px) {
+  .results {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 449px) {
+  .results {
+    padding: 16px;
+  }
+}

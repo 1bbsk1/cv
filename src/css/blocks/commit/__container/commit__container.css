@@ -1,0 +1,8 @@
+.commit__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  align-content: flex-end;
+  height: 64px;
+  margin: 0;
+}

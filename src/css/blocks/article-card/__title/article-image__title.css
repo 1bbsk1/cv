@@ -1,0 +1,13 @@
+.article-card__title {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 12px 0 16px;
+}
+
+@media (max-width: 1023px) {
+  .article-card__title {
+    font-size: 22px;
+  }
+}

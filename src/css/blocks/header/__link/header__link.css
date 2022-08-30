@@ -1,0 +1,14 @@
+@import url("./_selected/header__link_selected.css");
+@import url("./_white/header__link_white.css");
+
+.header__link {
+  margin-left: 34px;
+  height: 50px;
+}
+
+@media (max-width: 449px) {
+  .header__link {
+    font-size: 16px;
+    margin-left: 11px;
+  }
+}

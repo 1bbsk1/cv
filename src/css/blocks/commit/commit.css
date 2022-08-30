@@ -1,0 +1,34 @@
+@import url("./__date/commit__date.css");
+@import url("./__description/commit__description.css");
+@import url("./__email/commit__email.css");
+@import url("./__name/commit__name.css");
+@import url("./__photo/commit__photo.css");
+@import url("./__container/commit__container.css");
+
+.commit {
+  background-color: #fff;
+  width: 352px;
+  height: 240px;
+  border-radius: 16px;
+  margin: 0 8px;
+  padding: 24px;
+  position: relative;
+  text-decoration: none;
+  color: #1a1b22;
+}
+
+@media (max-width: 767px) {
+  .commit {
+    width: 288px;
+    height: 194px;
+  }
+}
+
+/* @media (max-width: 767px) {
+  .commit {
+    width: calc(100vw - 32px);
+    margin-left: 0;
+    padding: 16px;
+    height: 264px;
+  }
+} */

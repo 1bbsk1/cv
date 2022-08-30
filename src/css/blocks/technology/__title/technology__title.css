@@ -1,0 +1,15 @@
+.technology__title {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  margin: 0 0 24px;
+  width: 315px;
+}
+
+@media (max-width: 1023px) {
+  .technology__title {
+    margin-right: 100%;
+    font-size: 30px;
+  }
+}

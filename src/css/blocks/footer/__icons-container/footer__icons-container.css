@@ -1,0 +1,11 @@
+.footer__icons-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer__icons-container {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,18 @@
+@import url("./__title/clients__title.css");
+@import url("./__paragraph/clients__paragraph.css");
+
+.clients {
+  padding: 80px calc((100vw - 1232px) / 2);
+}
+
+@media (max-width: 1279px) {
+  .clients {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .clients {
+    padding: 16px;
+  }
+}

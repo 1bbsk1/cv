@@ -1,0 +1,12 @@
+.technology__tech-name {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .technology__tech-name {
+    margin: 0 4px 33px;
+  }
+}

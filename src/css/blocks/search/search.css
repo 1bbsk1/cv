@@ -1,0 +1,19 @@
+@import url("./__input/search__input.css");
+@import url("./__subtitle/search__subtitle.css");
+@import url("./__title/search__title.css");
+@import url("./__button/search__button.css");
+
+.search {
+  background-image: url("../../../images/banner-main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 160px calc((100vw - 608px) / 2) 80px;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .search {
+    padding: 86px 16px 16px;
+  }
+}

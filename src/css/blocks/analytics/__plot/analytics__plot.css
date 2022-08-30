@@ -1,0 +1,5 @@
+.analytics__plot {
+  display: grid;
+  grid-row-gap: 56px;
+  grid-template-columns: 104px auto;
+}

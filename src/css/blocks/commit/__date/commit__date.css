@@ -1,0 +1,13 @@
+.commit__date {
+  width: 100%;
+  color: #b6bcbf;
+  font-size: 14px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .commit__date {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,9 @@
+.results__link {
+  text-decoration: none;
+  color: #1a1b22;
+  font-weight: 500;
+}
+
+.results__link::after {
+  content: url("../../../../images/arrow-icon-black.svg");
+}

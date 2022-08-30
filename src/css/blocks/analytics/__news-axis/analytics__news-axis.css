@@ -1,0 +1,7 @@
+@import url("./_with-line/analytics__news-axis_with-line.css");
+
+.analytics__news-axis {
+  padding: 16px 0 16px 104px;
+  display: flex;
+  justify-content: space-between;
+}

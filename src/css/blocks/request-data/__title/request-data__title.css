@@ -1,0 +1,15 @@
+.request-data__title {
+  font-family: "Roboto Slab";
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  margin: 0 0 24px;
+}
+
+@media (max-width: 1023px) {
+  .request-data__title {
+    font-size: 30px;
+    /* max-width: 443px; */
+    margin-bottom: 16px;
+  }
+}

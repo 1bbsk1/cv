@@ -1,0 +1,11 @@
+.footer__link-list {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .footer__link-list {
+    flex-direction: column;
+    order: -1;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+  }
+}

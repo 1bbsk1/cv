@@ -1,0 +1,37 @@
+@import url("./_next/slider__button_next.css");
+@import url("./_prev/slider__button_prev.css");
+
+.slider__button {
+  position: absolute;
+  top: 126px;
+  background-color: #1a1b22;
+  width: 40px;
+  z-index: 2;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* .slider__button::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  display: block;
+  left: -37px;
+  width: 100px;
+  height: 288px;
+  top: -126px;
+  background: linear-gradient(to left, #fff 0%, transparent 100%);
+} */
+
+.slider__button::after {
+  content: url("../../../images/arrow-icon-white.svg");
+  display: inline-block;
+  top: 2px;
+}
+
+@media (max-width: 1279px) {
+  .slider__button {
+    display: none;
+  }
+}

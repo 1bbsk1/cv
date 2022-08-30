@@ -1,0 +1,28 @@
+@import url("./__date/article-card__date.css");
+@import url("./__paragraph/article-card__paragraph.css");
+@import url("./__source/article-card__source.css");
+@import url("./__title/article-image__title.css");
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: calc(100% * 17 / 25 + 20px) 24px 24px;
+  background-color: #fff;
+  background-position: top;
+  background-repeat: no-repeat;
+  /* background-size: auto calc(100% * 17 / 25 + 20px); */
+  background-size: auto 272px;
+
+  text-decoration: none;
+  color: #1a1b22;
+}
+
+@media (max-width: 1023px) {
+  .article-card {
+    padding: calc(100% * 17 / 25 + 16px) 16px 16px;
+  }
+}

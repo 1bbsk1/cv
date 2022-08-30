@@ -1,0 +1,15 @@
+@import url("./_hidden/results__button_hidden.css");
+
+.results__button {
+  width: 288px;
+  align-self: center;
+  border: none;
+}
+
+.results__button:hover {
+  background: #347eff;
+}
+
+.results__button:active {
+  background: #2a65cc;
+}

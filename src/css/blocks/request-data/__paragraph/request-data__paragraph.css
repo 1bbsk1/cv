@@ -1,0 +1,6 @@
+@import url("./_bold/request-data__paragraph_bold.css");
+
+.request-data__paragraph {
+  margin-top: 4px;
+  margin-bottom: 0;
+}

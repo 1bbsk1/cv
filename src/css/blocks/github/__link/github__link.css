@@ -1,0 +1,15 @@
+.github__link {
+  /* text-decoration: none;
+    color: #1a1b22;
+    font-weight: 500; */
+}
+
+.github__link::after {
+  content: url("../../../../images/arrow-icon-black.svg");
+}
+
+@media (max-width: 767px) {
+  .github__link {
+    display: none;
+  }
+}
