@@ -2,6 +2,7 @@
 @import url("./__title/page__title.css");
 @import url("./__subtitle/page__subtitle.css");
 @import url("./__header/page__header.css");
+@import url("./__link/page__link.css");
 
 .page {
   font-family: "Jet Brains Mono", Arial, sans-serif;
