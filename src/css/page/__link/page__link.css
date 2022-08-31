@@ -1,3 +1,18 @@
 .page__link {
-    
+  text-decoration: none;
+  color: #b3b3b3;
+
+  margin-top: 1rem;
+
+  text-transform: uppercase;
+  font-family: "Jet Brains Mono", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.page__link:visited {
+  color: #b3b3b3;
+}
+
+.page__link:hover {
+  color: #d3d3d3;
 }
