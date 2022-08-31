@@ -1,4 +1,17 @@
 .section__link {
   text-decoration: none;
+  color: #b3b3b3;
+  
   margin: 0 0.5rem;
+  text-transform: uppercase;
+  font-family: "Jet Brains Mono", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.section__link:visited {
+  color: #b3b3b3;
+}
+
+.section__link:hover {
+  color: #d3d3d3;
 }

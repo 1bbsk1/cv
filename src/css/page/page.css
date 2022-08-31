@@ -4,10 +4,9 @@
 @import url("./__header/page__header.css");
 
 .page {
-  font-size: 16px;
-  font-family: "Roboto Regular", Arial, sans-serif;
-  border: solid .2rem #f3f3f3;
+  font-family: "Jet Brains Mono", Arial, sans-serif;
   max-width: 50rem;
-  margin: 5rem auto;
+  width: 100%;
   padding: 3rem;
+  margin: 0 auto;
 }
