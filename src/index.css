@@ -1,4 +1,19 @@
-@import url("./vendor/normalize.css");
 @import url("./vendor/fonts.css");
 @import url("./css/page/page.css");
 @import url("./css/section/section.css");
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

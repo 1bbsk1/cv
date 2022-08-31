@@ -1,15 +1,11 @@
 @font-face {
-  font-family: "Roboto Medium";
-  src: url("./fonts/roboto-medium-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto Regular";
-  src: url("./fonts/roboto-regular-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto Slab";
+  font-family: "Jet Brains Mono";
   font-weight: normal;
-  src: url("./fonts/robotoslab-regular-webfont.woff") format("woff");
+  src: url("./fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Jet Brains Mono";
+  font-weight: bold;
+  src: url("./fonts/JetBrainsMono-Bold.woff2") format("woff2");
 }
