@@ -5,14 +5,12 @@
   "description": "cv",
   "main": "./src/index.js",
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production rimraf build && webpack --mode production",
-    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "predeploy": "npm run build",
-    "deploy": "cross-env NODE_ENV=production gh-pages -d build",
-    "clean": "rimraf build"
+    "build": "cross-env NODE_ENV=production rimraf build && webpack --mode production",
+    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production rimraf build && webpack --mode production && gh-pages -d build"
   },
   "keywords": [],
-  "author": "1ebobski",
+  "author": "1bbsk1",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "~7.6.4",
