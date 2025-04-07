@@ -1,8 +1,0 @@
-.section__list-element {
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: baseline;
-  font-size: 1.2rem;
-}

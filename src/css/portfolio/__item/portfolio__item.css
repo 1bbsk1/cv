@@ -1,0 +1,11 @@
+    .portfolio__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio__links {
+    display: flex;
+    gap: 1rem;
+}

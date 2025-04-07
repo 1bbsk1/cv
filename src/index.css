@@ -1,6 +1,18 @@
+@import url("./vendor/reset.css");
+@import url("./vendor/normalize.css");
 @import url("./vendor/fonts.css");
 @import url("./css/page/page.css");
-@import url("./css/section/section.css");
+@import url("./css/link/link.css");
+@import url("./css/section-title/section-title.css");
+@import url("./css/header/header.css");
+@import url("./css/portfolio/portfolio.css");
+@import url("./css/portfolio/__link/portfolio__link.css");
+@import url("./css/stack/stack.css");
+@import url("./css/education/education.css");
+@import url("./css/chapter/chapter.css");
+@import url("./css/work/work.css");
+@import url("./css/about/about.css");
+@import url("./css/footer/footer.css");
 
 html {
   font-size: 16px;
@@ -14,6 +26,11 @@ html {
 
 body {
   margin: 0;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* * { 
+  border: 1px solid rgba(255, 0, 0, 0.3); 
+} */

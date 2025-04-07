@@ -1,0 +1,13 @@
+.stack__item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stack__item:hover,
+.stack__item:focus {
+    transform: translateY(-2px);
+}
