@@ -3,100 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="CV" />
+    <meta
+      name="description"
+      content="Frontend developer, portfolio, CV, React developer"
+    />
     <meta name="author" content="Fedor Lukhmanov" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="CV Fedor Lukhmanov" />
+    <meta
+      property="og:description"
+      content="Frontend developer, portfolio, CV, React developer"
+    />
+    <meta
+      property="og:image"
+      content="https://1bbsk1.github.io/cv/images/photo.jpg"
+    />
+    <meta property="og:url" content="https://1bbsk1.github.io/cv/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CV Fedor Lukhmanov" />
+    <meta
+      name="twitter:description"
+      content="Frontend developer, portfolio, CV, React developer"
+    />
+    <meta
+      name="twitter:image"
+      content="https://1bbsk1.github.io/cv/images/photo.jpg"
+    />
 
     <title>CV Fedor Lukhmanov</title>
     <link
       rel="stylesheet"
-      href="styles/main.c997e91bd27cbded3edf.css"
+      href="styles/main.1e1c325bdbfe4466c514.css"
     />
     <link rel="shortcut icon" href="./images/favicon.ico" />
   </head>
   <body>
     <div class="page">
-      <header class="page__header"
-        ><img
-          class="page__photo"
+      <header class="header">
+        <img
+          class="header__photo"
           src="./images/photo.jpg"
-          alt="Fedor Lukhmanov,
-author"
-        /><h1 class="page__title">Fedor Lukhmanov</h1
-        ><h2 class="page__subtitle">Frontend Developer</h2
-        ><div
-          ><a
-            class="page__link"
-            href="https://www.linkedin.com/in/fedorlukhmanov/"
-            >linkedin</a
-          ><br /><a class="page__link" href="mailto:1ebobski@proton.me"
-            >email</a
-          ></div
-        ></header
-      >
-      <main
-        ><section class="section"
-          ><h3 class="section__title">Portfolio</h3
-          ><ul class="section__list"
-            ><li class="section__list-element"
-              ><span class="section__list-text"
-                >"News Analyzer" - responsive layout</span
-              ><a
-                class="section__link"
-                href="https://1ebobski.github.io/news-analyzer/"
-                >web</a
-              >|<a
-                class="section__link"
-                href="https://github.com/1ebobski/news-analyzer"
-                >repo</a
-              ></li
-            ><li class="section__list-element"
-              ><span class="section__list-text"
-                >"React Burger" - React + Redux</span
-              ><a
-                class="section__link"
-                href="https://1ebobski.github.io/react-burger"
-                >web</a
-              >|<a
-                class="section__link"
-                href="https://github.com/1ebobski/react-burger"
-                >repo</a
-              ></li
-            >
-          </ul></section
-        >
-        <section class="section"
-          ><h3 class="section__title">Stack</h3>
-          <p class="section__paragraph"
-            >html, css, js, ts, react, redux, rtk, git, npm, webpack.</p
-          ></section
-        ><section class="section"
-          ><h3 class="section__title">Education</h3>
-          <p class="section__paragraph"
-            >Graduated from Yandex.Practicum Junior frontend developer course,
-            undergoing React-developer course. Studied Physics in University.</p
-          ></section
-        >
-        <section class="section"
-          ><h3 class="section__title">Non-dev background</h3></section
-        ><p class="section__paragraph"
-          >I have a 5 year experience in UX field. Worked for Offside Gaming as
-          UX-analyst. Company provided betting solutions for businesses all over
-          the world and I took part in whole product developing from tech reqs
-          composition to top-management presentations. Currently working in
-          Open-broker brokarage company in conducting UX-researches and web
-          experiments.
-        </p>
-        <section class="section"
-          ><h3 class="section__title">About</h3
-          ><p class="section__paragraph"
-            >Have great communication skills and a fast learner. Eager for
-            interface perfection, beauty and user experience. Love sports and
-            competing in particular. Casually do grappling and yoga at the
-            moment.</p
-          ></section
-        ></main
-      >
+          alt="Fedor Lukhmanov"
+          loading="lazy"
+        />
+        <h1 class="header__title">Fedor Lukhmanov</h1>
+        <h2 class="header__subtitle">Frontend Developer</h2>
+        <nav class="header__links" aria-label="External links navigation">
+          <ul class="header__link-list">
+            <li class="header__link-item">
+              <a
+                class="link"
+                href="https://github.com/1bbsk1"
+                rel="noopener noreferrer"
+                >github</a
+              >
+            </li>
+            <li class="header__link-item">
+              <a
+                class="link"
+                href="https://t.me/fedya_dev"
+                rel="noopener noreferrer"
+                >telegram</a
+              >
+            </li>
+            <li class="header__link-item">
+              <a
+                class="link"
+                href="mailto:1ebobski@pm.me"
+                rel="noopener noreferrer"
+                >email</a
+              >
+            </li>
+            <li class="header__link-item">
+              <a
+                class="link"
+                href="https://instagram.com/1bbsk1"
+                rel="noopener noreferrer"
+                >instagram</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="portfolio">
+          <h3 class="section-title">Portfolio</h3>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <p class="portfolio__text">"News Analyzer" - responsive layout</p>
+              <div class="portfolio__links">
+                <a
+                  class="portfolio__link link"
+                  href="https://1bbsk1.github.io/news-analyzer/"
+                  >Live demo</a
+                >
+                <a
+                  class="portfolio__link link"
+                  href="https://github.com/1bbsk1/news-analyzer"
+                  >Code</a
+                >
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <p class="portfolio__text">"React Burger" - React + Redux</p>
+              <div class="portfolio__links">
+                <a
+                  class="portfolio__link link"
+                  href="https://1bbsk1.github.io/react-burger"
+                  >Live demo</a
+                >
+                <a
+                  class="portfolio__link link"
+                  href="https://github.com/1bbsk1/react-burger"
+                  >Code</a
+                >
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="stack">
+          <h3 class="section-title">Stack</h3>
+          <ul class="stack__list">
+            <li class="stack__item">html</li>
+            <li class="stack__item">css</li>
+            <li class="stack__item">js</li>
+            <li class="stack__item">ts</li>
+            <li class="stack__item">react</li>
+            <li class="stack__item">redux</li>
+            <li class="stack__item">rtk</li>
+            <li class="stack__item">git</li>
+            <li class="stack__item">npm</li>
+            <li class="stack__item">webpack</li>
+          </ul>
+        </section>
+        <section class="education">
+          <h3 class="section-title">Education</h3>
+          <ul class="education__list">
+            <li class="education__item">
+              <span class="education__school">Moscow State University</span>
+              <span class="education__date">2009-2015</span>
+              <span class="education__course">Physics</span>
+            </li>
+            <li class="education__item">
+              <span class="education__school">ESADE Business School</span>
+              <span class="education__date">2015-2016</span>
+              <span class="education__course"
+                >Masters in International Management</span
+              >
+            </li>
+            <li class="education__item">
+              <span class="education__school">Yandex.Practicum</span>
+              <span class="education__date">2020</span>
+              <span class="education__course">Junior Frontend Developer</span>
+            </li>
+            <li class="education__item">
+              <span class="education__school">Yandex.Practicum</span>
+              <span class="education__date">2022</span>
+              <span class="education__course">React Developer</span>
+            </li>
+          </ul>
+        </section>
+        <section class="work">
+          <h3 class="section-title">Work experience</h3>
+          <ul class="work__list">
+            <li class="work__place">
+              <span class="work__company">Offside Gaming</span>
+              <span class="work__date">May 2017 - Sep 2019</span>
+              <span class="work__position">Analyst</span>
+              <ul class="work__details">
+                <li class="work__details-item">
+                  Developed interactive web applications using a modern
+                  technology stack.
+                </li>
+                <li class="work__details-item">
+                  Worked with Agile/Scrum, planned tasks for a team of 5
+                  frontend developers.
+                </li>
+                <li class="work__details-item">
+                  Implemented new UI features and optimized performance.
+                </li>
+              </ul>
+            </li>
+            <li class="work__place">
+              <span class="work__company">Open-broker</span>
+              <span class="work__date">September 2019 - October 2022</span>
+              <span class="work__position">UX-analyst</span>
+              <ul class="work__details">
+                <li class="work__details-item">
+                  Launched and analyzed A/B tests, improving user experience.
+                </li>
+                <li class="work__details-item">
+                  Developed and implemented an automated tariff selection tool.
+                </li>
+                <li class="work__details-item">
+                  Created an interface for UX reports.
+                </li>
+              </ul>
+            </li>
+            <li class="work__place">
+              <span class="work__company">ADN Agency</span>
+              <span class="work__date">February 2024 - July 2024</span>
+              <span class="work__position">Project Manager</span>
+              <ul class="work__details">
+                <li class="work__details-item">
+                  Coordinated tasks for developing new functionality and bug
+                  fixes on e-commerce websites.
+                </li>
+                <li class="work__details-item">
+                  Improved UX, implemented UI changes based on user testing.
+                </li>
+                <li class="work__details-item">
+                  Worked with Figma, collaborated with developers and designers.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <h3 class="about__title section-title">About</h3>
+          <p class="about__text">
+            I have great communication skills and am a fast learner. Eager for
+            interface usability and simplicity. Love bodily activities like
+            brazilian jiu-jitsu and yoga.
+          </p>
+        </section>
+      </main>
+      <footer class="footer">Fedor Lukhmanov 2025</footer>
     </div>
     <script src="scripts/main.048dd97f94bbfcb260a5.js"></script>
   </body>
