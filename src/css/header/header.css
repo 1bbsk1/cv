@@ -1,0 +1,15 @@
+@import url("./__photo/header__photo.css");
+@import url("./__title/header__title.css");
+@import url("./__subtitle/header__subtitle.css");
+@import url("./__links/header__links.css");
+@import url("./__link-item/header__link-item.css");
+@import url("./__link-list/header__link-list.css");
+
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
+  

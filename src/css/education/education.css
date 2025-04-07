@@ -1,0 +1,9 @@
+@import url("./__course/education__course.css");
+@import url("./__date/education__date.css");
+@import url("./__list/education__list.css");
+@import url("./__school/education__school.css");        
+@import url("./__item/education__item.css");
+
+.education {
+    margin: 2rem auto 2rem;
+}

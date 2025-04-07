@@ -1,8 +1,0 @@
-.page__header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 10rem;
-  justify-items: center;
-  margin-bottom: 5rem;
-}

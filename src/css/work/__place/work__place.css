@@ -1,0 +1,46 @@
+.work__place {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 1rem 0 0;
+    
+}
+
+.work__company,
+.work__date {
+    flex: 1 1 auto;
+}
+
+.work__position {
+    flex-basis: 100%;
+}
+
+.work__details {
+    flex-basis: 100%;
+}
+
+/* Mobile: stack vertically with order date, company, position, details */
+@media (max-width: 600px) {
+    .work__place {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .work__date {
+        order: 1;
+    }
+
+    .work__company {
+        order: 2;
+    }
+
+    .work__position {
+        order: 3;
+    }
+
+    .work__details {
+        order: 4;
+    }
+}

@@ -1,0 +1,6 @@
+@import url("./__list/portfolio__list.css");
+@import url("./__item/portfolio__item.css");
+@import url("./__text/portfolio__text.css");
+.portfolio {
+    margin: 0 auto 2rem;
+}
