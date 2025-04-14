@@ -1,0 +1,9 @@
+/* PAGE BLOCK STYLES - CONSOLIDATED */
+
+.page {
+  font-family: "Jet Brains Mono", Arial, sans-serif;
+  max-width: 50rem;
+  width: 100%;
+  padding: 3rem;
+  margin: 0 auto;
+}

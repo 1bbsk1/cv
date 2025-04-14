@@ -1,0 +1,33 @@
+/* PORTFOLIO BLOCK STYLES - CONSOLIDATED */
+
+/* Block */
+.portfolio {
+    margin: 0 auto 2rem;
+}
+
+/* Elements */
+.portfolio__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.portfolio__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.portfolio__link {
+    margin-left: auto;
+}
+
+.portfolio__text {
+    font-size: 1rem;
+}

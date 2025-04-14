@@ -1,0 +1,19 @@
+/* LINK BLOCK STYLES - CONSOLIDATED */
+
+.link {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+  font-family: "Jet Brains Mono", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.link:visited {
+  color: #b3b3b3;
+}
+
+.link:hover {
+  color: #d3d3d3;
+}

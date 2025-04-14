@@ -1,0 +1,66 @@
+/* EDUCATION BLOCK STYLES - CONSOLIDATED */
+
+/* Block */
+.education {
+    margin: 2rem auto 2rem;
+}
+
+/* Elements */
+.education__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+}
+
+.education__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.education__school {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: bold;
+  /* margin-top: 0.5rem;
+  margin-bottom: 0.1rem; */
+  flex: 1 1 auto;
+}
+
+.education__date {
+  display: inline-block;
+  text-align: right;
+  font-size: 1rem;
+  flex: 1 1 auto;
+}
+
+.education__course {
+  align-self: flex-start;
+  font-size: 1rem;
+  flex-basis: 100%;
+}
+
+/* Mobile: stack vertically with order date, school, course */
+@media (max-width: 600px) {
+  .education__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education__date {
+    order: 1;
+  }
+
+  .education__school {
+    order: 2;
+  }
+
+  .education__course {
+    order: 3;
+  }
+}

@@ -1,0 +1,48 @@
+/* HEADER BLOCK STYLES - CONSOLIDATED */
+
+/* Block */
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+
+/* Elements */
+.header__photo {
+  width: 10rem;
+  border-radius: 100%;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  margin: auto 0;
+}
+
+.header__subtitle {
+  font-size: 2rem;
+  margin: auto 0;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header__link-item {
+    
+}
+
+.header__link-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    height: 100%
+}
