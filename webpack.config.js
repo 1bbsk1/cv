@@ -1,15 +1,12 @@
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// Removed incompatible webpack-md5-hash plugin
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-// const isDev = process.env.NODE_ENV === "development";
+// const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin"); // [NOTE] Disabled for vanilla JS/static HTML. Will be re-enabled for React+TypeScript migration.
+const isDev = process.env.NODE_ENV === "development";
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-new webpack.DefinePlugin({
-  NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-});
 
 module.exports = {
   entry: {
@@ -17,15 +14,13 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "scripts/[name].[chunkhash].js",
-    publicPath: '/',
+    filename: "scripts/[name].[contenthash].js",
+    publicPath: '',
   },
 
   devServer: {
-    static: {
-      directory: path.join(__dirname, "src"),
-    },
     open: true,
+    port: 3000,
   },
 
   optimization: {
@@ -33,19 +28,19 @@ module.exports = {
     minimizer: [
       '...',
       new CssMinimizerPlugin(),
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminGenerate,
-          options: {
-            plugins: [
-              ["gifsicle", { interlaced: true }],
-              ["mozjpeg", { quality: 75 }],
-              ["pngquant", { quality: [0.65, 0.90], speed: 4 }],
-              ["svgo", { plugins: [{ removeViewBox: false }] }],
-            ],
-          },
-        },
-      }),
+      // new ImageMinimizerPlugin({
+      //   minimizer: {
+      //     implementation: ImageMinimizerPlugin.imageminGenerate,
+      //     options: {
+      //       plugins: [
+      //         ["gifsicle", { interlaced: true }],
+      //         ["mozjpeg", { quality: 75 }],
+      //         ["pngquant", { quality: [0.65, 0.90], speed: 4 }],
+      //         ["svgo", { plugins: [{ removeViewBox: false }] }],
+      //       ],
+      //     },
+      //   },
+      // }), // [NOTE] Disabled for vanilla JS/static HTML. Will be re-enabled for React+TypeScript migration.
     ],
   },
 
@@ -58,21 +53,13 @@ module.exports = {
           loader: "babel-loader",
         },
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     isDev ? "style-loader" : MiniCssExtractPlugin.loader,
-      //     "css-loader",
-      //     "postcss-loader"
-      //   ]
-      // },
       {
         test: /\.css$/,
         use: [
-          {
+          isDev ? "style-loader" : {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '/',
+              publicPath: '../',
             },
           },
           "css-loader",
@@ -81,25 +68,23 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "./images/[name].[ext]",
-            },
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "assets/images/[name][ext]",
+        },
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: "fonts/",
-          publicPath: "/fonts/",
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
         },
       },
     ],
+  },
+
+  resolve: {
+    extensions: [".js", ".json"],
   },
 
   plugins: [
@@ -114,6 +99,11 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/assets/images", to: "assets/images" }
+      ],
     }),
     // new InterpolateHtmlPlugin(HtmlWebpackPlugin, env.raw),
   ],
