@@ -1,0 +1,16 @@
+/* CHAPTER BLOCK STYLES - CONSOLIDATED */
+
+/* Elements */
+.chapter__date {
+    font-size: 1.2rem;
+}
+
+.chapter__list {
+    list-style: armenian;
+    /* padding-left: 0;
+    margin: 0; */
+}
+
+.chapter__details {
+    font-size: 1.2rem;
+}
