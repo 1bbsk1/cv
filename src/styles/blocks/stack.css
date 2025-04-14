@@ -1,0 +1,30 @@
+/* STACK BLOCK STYLES - CONSOLIDATED */
+
+/* Block */
+.stack {
+    margin: 0 auto;
+}
+
+/* Elements */
+.stack__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
+.stack__item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stack__item:hover,
+.stack__item:focus {
+    transform: translateY(-2px);
+}
