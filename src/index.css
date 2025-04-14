@@ -1,18 +1,18 @@
 @import url("./vendor/reset.css");
 @import url("./vendor/normalize.css");
 @import url("./vendor/fonts.css");
-@import url("./css/page/page.css");
-@import url("./css/link/link.css");
-@import url("./css/section-title/section-title.css");
-@import url("./css/header/header.css");
-@import url("./css/portfolio/portfolio.css");
-@import url("./css/portfolio/__link/portfolio__link.css");
-@import url("./css/stack/stack.css");
-@import url("./css/education/education.css");
-@import url("./css/chapter/chapter.css");
-@import url("./css/work/work.css");
-@import url("./css/about/about.css");
-@import url("./css/footer/footer.css");
+@import url("./styles/blocks/page.css");
+@import url("./styles/blocks/link.css");
+@import url("./styles/blocks/section-title.css");
+@import url("./styles/blocks/header.css");
+@import url("./styles/blocks/portfolio.css");
+
+@import url("./styles/blocks/stack.css");
+@import url("./styles/blocks/education.css");
+@import url("./styles/blocks/chapter.css");
+@import url("./styles/blocks/work.css");
+@import url("./styles/blocks/about.css");
+@import url("./styles/blocks/footer.css");
 
 html {
   font-size: 16px;
